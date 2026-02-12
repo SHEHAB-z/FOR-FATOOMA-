@@ -140,11 +140,11 @@ function initButtons() {
             transitionScene('warning-screen', 'main-message-screen');
             createPetals();
             
-            // Show main message for 30 seconds (زودناها من 15 لـ 30)
+            // Show main message for 60 seconds (دقيقة كاملة)
             setTimeout(function() {
                 transitionScene('main-message-screen', 'game-screen');
                 initGame();
-            }, 30000);
+            }, 60000);
         }, 3000);
     };
     
@@ -198,7 +198,7 @@ function replaceExitWithNext() {
                         setTimeout(function() {
                             transitionScene('main-message-screen', 'game-screen');
                             initGame();
-                        }, 30000);
+                        }, 60000);
                     }, 3000);
                 };
                 
@@ -224,7 +224,7 @@ function replaceExitWithNext() {
                 setTimeout(function() {
                     transitionScene('main-message-screen', 'game-screen');
                     initGame();
-                }, 30000);
+                }, 60000);
             }, 3000);
         };
     }
